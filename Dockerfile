@@ -6,7 +6,7 @@ RUN chown node:node /usr/src/app
 
 COPY package.json package-lock.json ./
 
-RUN npm install && npm clean cache --force
+RUN npm install && npm cache clean --force
 
 COPY . ./
 
