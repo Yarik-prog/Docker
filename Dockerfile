@@ -2,7 +2,7 @@ FROM node:17.6.0
 
 WORKDIR /usr/src/app
 
-RUN chown node:node ./
+RUN chown node:node ./usr/src/app
 
 COPY package.json package-lock.json ./
 
